@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DASHBOARD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="avatars/1.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide w3-hover-dark-grey"><b>AJB</b></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button w3-hover-dark-grey"><b>ABOUT</b></a>
+                <a href="#team" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-user"></i><b> TEAM</b></a>
+                <a href="#work" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-th"></i><b> GARAGE</b></a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hover-dark-grey"><i class="fa fa-envelope"></i><b> CONTACT</b></a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-dark-grey" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large w3-dark-grey" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding w3-hover-dark-grey w3-white fa fa-close"></a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><b>ABOUT</b></a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><b>TEAM</b></a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><b>GARAGE</b></a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><b>CONTACT</b></a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-white" id="home">
+        <!-- <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">AJB GARAGE</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">ASAL JADI BERAS</span><br>
+            <span class="w3-xlarge">Welcome To Our Garage.</span>
+            <p><a href="#about" class="w3-button w3-round-large w3-black w3-hover-white w3-padding-large w3-large w3-margin-top">Check This Out</a></p>
+        </div> -->
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding:50px 10px" id="about">
+        <h3 class="w3-center">ABOUT THE COMPANY</h3>
+        <p class="w3-center w3-large"><b>A</b>sal <b>J</b>adi <b>B</b>eras</p>
+        <p class="w3-center w3-large"><b>AJB</b></p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Responsive</p>
+                <p>Siap melayani sesuai permintaan Anda.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Passion</p>
+                <p>Sangat menyukai keindahan, kerapian dan perawatan.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Design</p>
+                <p>Suku Bangsa, Budaya dan Bangsa.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Support</p>
+                <p>4L, <b>L</b>oe <b>L</b>agi <b>L</b>oe <b>L</b>agi.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section - "We know design" -->
+    <div class="w3-container w3-dark-grey" style="padding:50px 10px">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3>Kami mengerti desain.</h3>
+                <p>Silakan datang dan lihat beberapa proyek yang telah kami kerjakan.<br>Jangan lupa minum kopi yang baru diseduh untuk sarapan.</p>
+                <p><a href="#work" class="w3-button w3-round-large w3-black w3-hover-white"><i class="fa fa-th"> </i> Lihat Karya Kami</a></p>
+            </div>
+            <div class="w3-col m6">
+                <img class="w3-image w3-round-large" src="avatars/1.jpg" alt="Buildings" width="700" height="394">
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="w3-container" style="padding:50px 10px" id="team">
+        <h3 class="w3-center">THE TEAM</h3>
+        <p class="w3-center w3-large">Orang-orang yang menjalankan perusahaan ini.</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="avatars/2.jpg" alt="Gandul" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Gandul</h3>
+                        <p class="w3-opacity">CEO & Founder</p>
+                        <p>Halal, Keluarga dan Orang Tua.</p>
+                        <p><button class="w3-button w3-dark-grey w3-block w3-hover-white"><i class="fa fa-envelope"></i> Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="avatars/3.jpg" alt="Black" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Black</h3>
+                        <p class="w3-opacity">Art Director</p>
+                        <p>Citra, Kualitas, dan Alam.</p>
+                        <p><button class="w3-button w3-dark-grey w3-block w3-hover-white"><i class="fa fa-envelope"></i> Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="avatars/4.jpg" alt="Zawa" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Zawa</h3>
+                        <p class="w3-opacity">Vespa Designer</p>
+                        <p>Klasik, Unik dan Pemberontak.</p>
+                        <p><button class="w3-button w3-dark-grey w3-block w3-hover-white"><i class="fa fa-envelope"></i> Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="avatars/5.jpg" alt="RT" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Ruslan</h3>
+                        <p class="w3-opacity">Engineer</p>
+                        <p>Ibadah, Standar, dan Kecepatan.</p>
+                        <p><button class="w3-button w3-dark-grey w3-block w3-hover-white"><i class="fa fa-envelope"></i> Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section "Statistics" -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">14+</span>
+            <br>Partners
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">55+</span>
+            <br>Projects Done
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">89+</span>
+            <br>Happy Clients
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">150+</span>
+            <br>Meetings
+        </div>
+    </div>
+
+    <!-- Work Section -->
+    <div class="w3-container" style="padding:50px 10px" id="work">
+        <h3 class="w3-center">OUR WORK</h3>
+        <p class="w3-center w3-large">Apa yang telah kami lakukan untuk orang lain.</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6">
+                <img src="results/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="results/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="results/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="results/4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <img src="results/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="results/6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="results/7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="results/8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="w3-container w3-dark-grey w3-padding-64">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3>Our Skills.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                    tempor incididunt ut labore et dolore.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                    tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="w3-col m6">
+                <p class="w3-wide"><i class="fa fa-paint-brush w3-margin-right"></i>Pengecatan dan Airbrush</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-white w3-center" style="width:90%">90%</div>
+                </div>
+                <p class="w3-wide"><i class="fa fa-wrench w3-margin-right"></i>Perbaikan dan Pengelasan</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-white w3-center" style="width:85%">85%</div>
+                </div>
+                <p class="w3-wide"><i class="fa fa-motorcycle w3-margin-right"></i>Perawatan dan Layanan</p>
+                <div class="w3-grey">
+                    <div class="w3-container w3-white w3-center" style="width:80%">80%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-dark-grey" style="padding:50px 10px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Ayo join, jangan malu - malu. Hubungi kami disini ya.</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Depok, Jawa Barat, Indonesia</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone : +62 857-1721-2996</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email : ajb@gmail.com</p>
+            <br>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-white w3-padding-64">
+        <a href="#home" class="w3-button w3-round-large w3-black w3-hover-white fa fa-arrow-up"></a>
+        <div class="w3-xxlarge w3-section">
+            <a href="https://www.facebook.com/black.ajah.524/" target="_blank" class="fa fa-facebook-square w3-hover-opacity"></a>
+            <a href="https://www.instagram.com/black_ajb_garagepaint/" target="_blank" class="fa fa-instagram w3-hover-opacity"></a>
+            <a href="" target="_blank" class="fa fa-youtube-square w3-hover-opacity"></a>
+        </div>
+        <p><b class="w3-button w3-round-large w3-black w3-hover-black fa fa-copyright"> Asal Jadi Beras 2024</b></p>
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+
+        // Set Javascript For Refresh Windows Focus Top Page
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
+
+</body>
+</html>
